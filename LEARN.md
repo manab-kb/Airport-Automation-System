@@ -1,6 +1,9 @@
 # Airport-Automation-System
 Airport Automation System - MI Project Sem V
 
+# Resources
+1. [YOLO Models](https://towardsdatascience.com/yolo-object-detection-with-opencv-and-python-21e50ac599e9)
+
 # Contributing to Airport-Automation-System
 Hello and welcome! We are so glad that you are interested in contributing to Airport-Automation-System !
 We only have a couple of rules and we hope you enjoy the process :)
