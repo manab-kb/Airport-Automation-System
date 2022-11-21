@@ -1,6 +1,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 
+"""
+GUI class to define UI buttons, actions perfomed on clicking and output/debug messages whilst hovering over/clicking
+on them.
+"""
 
 class Buttons:
     def buyButton(self):

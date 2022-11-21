@@ -2,6 +2,14 @@ import cv2
 from simple_facerec import SimpleFacerec
 import time
 
+"""
+Functions in this file perform the task of image recognition from the live feed of the users device against the saved
+images in the image directory of the project. The 'detected' face has a 'red' box surrounding itself from our previous
+code. The functions below perform the task of extraction of image metadata from live frames, comparision against stored
+metadata of saved images, and display a green box around a face if it is recognised. If not recognized, tries to find
+the nearest match.
+"""
+
 # Encode faces from a folder
 sfr = SimpleFacerec()
 sfr.load_encoding_images("./src/images/")

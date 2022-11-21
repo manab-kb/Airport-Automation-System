@@ -6,13 +6,27 @@ import numpy as np
 import time
 
 
+"""
+GUI class for performing face 'recognition'. Produces and reads image metadata, compares with previously saved metadata. 
+Mimics a recognition model, Checks for perfect/nearest/best matches of metadata and appends names to the list 
+of known names, if a good match is found.
+"""
+
 class SimpleFacerec:
+    # Constructor to initialize private variables
+
     def __init__(self):
         self.known_face_encodings = []
         self.known_face_names = []
 
         # Resize frame for a faster speed 0.25
         self.frame_resizing = 0.25
+
+    """
+    Function to read all images present in the image directory of the project, store information about their encoding
+    in a the above declared encoding list, and store their filenames in the also above declared names list. This will
+    be further used by the face 'recognition' model, as image metadata.
+    """
 
     def load_encoding_images(self, images_path):
         """
@@ -40,6 +54,14 @@ class SimpleFacerec:
             self.known_face_encodings.append(img_encoding)
             self.known_face_names.append(filename)
         print("Encoding images loaded")
+
+    """
+    Performs the task of face recognition on 'known' images by simulating a model. The below function captures live feed 
+    from the 'detected' face in frames, calculates the image metadata (image name and encoding) of each frame, checks if
+    the metadata of any frame captured matches the metadata of the saved images exactly. If yes, proceeds with
+    appending name to the list. If not, checks for the nearest match (uses KNN) to the metadata among all saved images. 
+    If finds a good match with a good level of accuracy, then proceeds with appending name to the list of known names. 
+    """
 
     def detect_known_faces(self, frame):
         small_frame = cv2.resize(

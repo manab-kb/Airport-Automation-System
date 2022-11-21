@@ -7,6 +7,11 @@ from pydispatch import dispatcher
 metaKey = "moo"
 MyNode = object()
 
+"""
+This file contains previously discussed functions to perform the action of both facial detection and recognition; the
+only difference being additional attributes have been added into the code, as all these attributes are entries within
+the database.
+"""
 
 def detectFace():
     ticketStg = TicketStg()

@@ -4,6 +4,12 @@ import cv2
 CONFIDENCE = 0.60
 MARGIN = 100
 
+"""
+Helper function for face detection. This function uses the array of results returned by the YOLO model, 
+enumerates them into a key value pair object, and matches the returned attributes against a level of confidence to 
+detect if the face found in the feed holds true. If so, calculates the height and width of the image as best suited
+for the 'recognition' model, and then saves the image into a project directory when prompted by the user to do so.
+"""
 
 def getFaces(results, frame, name, cap):
     faces = []

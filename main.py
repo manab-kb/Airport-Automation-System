@@ -18,6 +18,12 @@ from pydispatch import dispatcher
 logging.basicConfig(level=logging.INFO)
 
 
+"""
+This file contains the main class, that controls all the UI present within the program created. All the previously
+discussed functions have been called here as relevant buttons are clicked by the user. Once all the tasks are done,
+this file kills the GUI.
+"""
+
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()

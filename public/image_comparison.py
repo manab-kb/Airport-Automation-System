@@ -1,6 +1,12 @@
 import cv2
 import face_recognition
 
+"""
+Modular code to demonstrate how image recognition is performed without using a model. face_recognition is used to obtain
+image metadata - encoding and name, and is then compared with the metadata of the test subject, and a result is printed
+based on the one hot encoded array of results returned. (during a live feed comparision, a threshold is maintained)
+"""
+
 img = cv2.imread("Messi1.webp")
 rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img_encoding = face_recognition.face_encodings(rgb_img)[0]
