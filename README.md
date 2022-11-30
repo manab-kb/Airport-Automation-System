@@ -4,26 +4,26 @@ Airport Automation System - MI Project Sem V
 # Resources
 1. [YOLO Models](https://towardsdatascience.com/yolo-object-detection-with-opencv-and-python-21e50ac599e9)
 
-# Contributing to Airport-Automation-System
-Hello and welcome! We are so glad that you are interested in contributing to Airport-Automation-System !
-We only have a couple of rules and we hope you enjoy the process :)
+# About the Project
+A biometric enabled travel system based on Facial Recognition Technology which will facilitate paperless travel and avoid multiple identity checks at the airport enabling seamless and hassle-free travel.
 
-## Contributing Rules
-1. Don't move or delete any files. Only modify them.
+The project consists of two modules :
+1) Image Detection (If a face is there in the frame) - faceDetection.py
+2) Image Recognisation (Matching the face with already present database) - simple_facerec.py
 
-## Contributing Process
-1. Fork the repository
-2. Clone your forked repository to your computer
-3. Head to the issues tab and look for an issue that you like.
-4. Once you have decided what issue to work on, give it a shot!
-5. Once done, push the code to your forked repository.
-6. Head to the Pull Requests tab and click on "Create New Pull Request"
-7. On the left of the arrow should be this repo and on the right should be yours.
-8. Add a small description to the Pull Request describing what you've done.
-9. Mention what Issue you have worked on. If the issue number is #3, you can mention "Closes #3" in the Pull Request description.
-10. Submit Pull Request
+#In order to run the project 
+1) Import all codefiles in a folder and run main.py
+[CAUTION: there are two main.py files, the one NOT IN detection folder needs to be run]
+2) The code will be executed and a GUI Window will open.
 
-It's that easy! We hope you enjoy contributing to our repository. Don't hesitate to contact any of the maintainers about any problems!
 
----
-## MI PROJECT - SEM V
+- A ticket window will open, chose any flight and click on BUY. 
+- A new camera window will open. press S to click a picture. 
+- Click on complete transaction.
+- The name and image will be stored in database.
+- When the passenger has to board the flight click on Sign in with Camera.
+- If the system recognises your face a green rectangle with your name will show up.
+- Voila! you are ready to go.
+
+
+
