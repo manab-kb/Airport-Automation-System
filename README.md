@@ -11,7 +11,7 @@ The project consists of two modules :
 1) Image Detection (If a face is there in the frame) - faceDetection.py
 2) Image Recognisation (Matching the face with already present database) - simple_facerec.py
 
-#In order to run the project 
+# In order to run the project 
 1) Import all codefiles in a folder and run main.py
 [CAUTION: there are two main.py files, the one NOT IN detection folder needs to be run]
 2) The code will be executed and a GUI Window will open.
